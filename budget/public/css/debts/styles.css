@@ -1,0 +1,191 @@
+@import url(../common/table.css);
+
+.debts .debts-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: var(--light-color);
+}
+
+.debts .debts-nav .search-bar input {
+  width: 300px;
+  padding: 4px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+.debts .debts-nav .debts-buttons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.debts .debts-nav .debts-buttons button {
+  padding: 5px;
+  font-weight: bold;
+  color: var(--light-color);
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.debts .debts-tab {
+  display: flex;
+  border-bottom: 2px solid var(--dark-color);
+  padding: 5px 5px 0 5px;
+}
+
+.debts .debts-tab .tab {
+  padding: 5px;
+  font-weight: bold;
+  width: 15%;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.debts .debts-tab .tab:hover {
+  background-color: burlywood;
+  cursor: pointer;
+  color: black;
+}
+
+.debts .debts-tab .active-tab {
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+}
+
+.debts .debts-table .table-container,
+.last-payment-list .payments-table .table-container {
+  overflow-x: scroll;
+}
+
+.last-payment-list .payments-table .table-container {
+  height: 190px;
+}
+
+.debts .debts-table .table-container .table-row,
+.last-payment-list .payments-table .table-container .table-row {
+  display: flex;
+  width: fit-content;
+  border-bottom: 2px solid var(--light-color);
+}
+
+.debts-table .table-container .table-row:last-child {
+  border: none;
+}
+
+.debts-table .table-container .table-row .table-column {
+  width: 200px;
+  padding: 10px 0;
+}
+
+.debts-table .table-container .table-row .table-column,
+.payments-table .table-container .table-row .table-column {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.payments-table .table-container .table-row .table-column {
+  width: 120px;
+  padding: 0 5px;
+}
+
+.debts-table .table-container .table-headings {
+  font-size: 16px;
+}
+
+.debts-table .table-container .table-headings,
+.payments-table .table-container .table-headings {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color);
+  border: none;
+}
+
+.debts-table .table-container .table-headings .table-column,
+.payments-table .table-container .table-headings .table-column {
+  background-color: var(--dark-color);
+}
+
+.debt-edit-wrapper {
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.debt-edit-wrapper img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 40px 50px 0 0;
+  cursor: pointer;
+}
+
+.pay-debt-container {
+  border: 2px solid brown;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pay-debt-container .debt-product-name,
+.pay-debt-container .debt-service-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pay-debt-container .debt-creditor,
+.pay-debt-container .debt-provider {
+  font-size: 18px;
+  font-family: cursive;
+}
+
+.pay-debt-container .debt-product-category {
+  font-style: italic;
+  font-weight: bold;
+  color: brown;
+}
+
+.pay-debt-container .debt-product-quantity {
+  background-color: brown;
+  color: white;
+  font-size: 12px;
+  padding: 1px;
+  width: fit-content;
+}
+
+.pay-debt-container .debt-amount {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.debt-payment-form-container {
+  display: flex;
+  gap: 5px;
+}
+
+.debt-payment-form-container .last-payment-container,
+.debt-payment-form-container .debt-payment-form {
+  width: 50%;
+}
+
+.debt-payment-form-container .last-payment-container .last-payment-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.debt-payment-form-container .last-payment-container .last-payment-list {
+  background-color: white;
+  border-radius: 5px;
+  height: 90%;
+  overflow-y: scroll;
+}

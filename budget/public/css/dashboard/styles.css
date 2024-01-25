@@ -1,0 +1,59 @@
+@import url(../common/styles.css);
+
+.summary-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.summary-cards .summary-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  margin: 10px;
+}
+
+.summary-cards .summary-card .summary-amount-title,
+.summary-cards .summary-card .summary-title {
+  border-bottom: 2px solid black;
+}
+
+.summary-cards .summary-card .summary-amount-title,
+.summary-cards .summary-card .summary-special-title,
+.summary-cards .summary-card .summary-balance-title {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: cursive;
+  text-transform: capitalize;
+  flex: 1;
+}
+
+.summary-cards .summary-card .summary-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-cards .summary-card .summary-balance-title {
+  border-left: 1px solid black;
+  flex: 1;
+}
+
+.summary-cards .summary-card .summary-money {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary-cards .summary-card .summary-amount,
+.summary-cards .summary-card .summary-balance {
+  font-size: 25px;
+  font-family: fantasy;
+  padding: 5px 10px;
+  color: var(--secondary-color);
+  flex: 1;
+}
+
+.summary-cards .summary-card .summary-balance {
+  border-left: 1px solid black;
+  color: brown;
+}

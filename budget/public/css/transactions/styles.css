@@ -1,0 +1,112 @@
+@import url(../common/table.css);
+
+.transactions .transactions-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: var(--light-color);
+}
+
+.transactions .transactions-nav .search-bar input {
+  width: 300px;
+  padding: 4px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+.transactions .transactions-nav .transactions-buttons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.transactions .transactions-nav .transactions-buttons button {
+  padding: 5px;
+  font-weight: bold;
+  color: var(--light-color);
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.transactions .transactions-tab {
+  display: flex;
+  border-bottom: 2px solid var(--dark-color);
+  padding: 5px 5px 0 5px;
+}
+
+.transactions .transactions-tab .tab {
+  padding: 5px;
+  font-weight: bold;
+  width: 15%;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.transactions .transactions-tab .tab:hover {
+  background-color: burlywood;
+  cursor: pointer;
+  color: black;
+}
+
+.transactions .transactions-tab .active-tab {
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+}
+
+.transactions .transactions-table .table-container {
+  overflow-x: scroll;
+}
+
+.transactions .transactions-table .table-container .table-row {
+  display: flex;
+  width: fit-content;
+  border-bottom: 2px solid var(--light-color);
+}
+
+.transactions-table .table-container .table-row:last-child {
+  border: none;
+}
+
+.transactions-table .table-container .table-row .table-column {
+  width: 200px;
+  padding: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.transactions-table .table-container .table-headings {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-color);
+  border: none;
+}
+
+.transactions-table .table-container .table-headings .table-column {
+  background-color: var(--dark-color);
+}
+
+.transaction-edit-wrapper {
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.transaction-edit-wrapper img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 40px 50px 0 0;
+  cursor: pointer;
+}

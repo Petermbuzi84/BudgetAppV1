@@ -1,0 +1,190 @@
+@import url(../common/table.css);
+
+.investments .investments-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: var(--light-color);
+}
+
+.investments .investments-nav .search-bar input {
+  width: 300px;
+  padding: 4px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+.investments .investments-nav .investments-buttons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.investments .investments-nav .investments-buttons button {
+  padding: 5px;
+  font-weight: bold;
+  color: var(--light-color);
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.investments .investments-tab {
+  display: flex;
+  border-bottom: 2px solid var(--dark-color);
+  padding: 5px 5px 0 5px;
+}
+
+.investments .investments-tab .tab {
+  padding: 5px;
+  font-weight: bold;
+  width: 15%;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.investments .investments-tab .tab:hover {
+  background-color: burlywood;
+  cursor: pointer;
+  color: black;
+}
+
+.investments .investments-tab .active-tab {
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+}
+
+.investments .investments-table .table-container,
+.last-payment-list .payments-table .table-container {
+  overflow-x: scroll;
+}
+
+.last-payment-list .payments-table .table-container {
+  height: 190px;
+}
+
+.investments .investments-table .table-container .table-row,
+.last-payment-list .payments-table .table-container .table-row {
+  display: flex;
+  width: fit-content;
+  border-bottom: 2px solid var(--light-color);
+}
+
+.investments-table .table-container .table-row:last-child {
+  border: none;
+}
+
+.investments-table .table-container .table-row .table-column {
+  width: 200px;
+  padding: 10px 0;
+}
+
+.investments-table .table-container .table-row .table-column,
+.payments-table .table-container .table-row .table-column {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.payments-table .table-container .table-row .table-column {
+  width: 120px;
+  padding: 0 5px;
+}
+
+.investments-table .table-container .table-headings {
+  font-size: 16px;
+}
+
+.investments-table .table-container .table-headings,
+.payments-table .table-container .table-headings {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color);
+  border: none;
+}
+
+.investments-table .table-container .table-headings .table-column {
+  background-color: var(--dark-color);
+}
+
+.investment-edit-wrapper {
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.investment-edit-wrapper img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 40px 50px 0 0;
+  cursor: pointer;
+}
+
+.pay-investment-container {
+  border: 2px solid brown;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pay-investment-container .investment-product-name,
+.pay-investment-container .investment-service-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pay-investment-container .investment-creditor,
+.pay-investment-container .investment-provider {
+  font-size: 18px;
+  font-family: cursive;
+}
+
+.pay-investment-container .investment-product-category {
+  font-style: italic;
+  font-weight: bold;
+  color: brown;
+}
+
+.pay-investment-container .investment-product-quantity {
+  background-color: brown;
+  color: white;
+  font-size: 12px;
+  padding: 1px;
+  width: fit-content;
+}
+
+.pay-investment-container .investment-amount {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.investment-payment-form-container {
+  display: flex;
+  gap: 5px;
+}
+
+.investment-payment-form-container .last-payment-container,
+.investment-payment-form-container .investment-payment-form {
+  width: 50%;
+}
+
+.investment-payment-form-container .last-payment-container .last-payment-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.investment-payment-form-container .last-payment-container .last-payment-list {
+  background-color: white;
+  border-radius: 5px;
+  height: 90%;
+  overflow-y: scroll;
+}

@@ -1,0 +1,89 @@
+@import url(../common/styles.css);
+
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 0 10px;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo span {
+  color: var(--secondary-color);
+  font-family: fantasy;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.balance {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.balance .currency {
+  color: var(--secondary-color);
+}
+
+.balance .amount {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.side-nav-container {
+  width: 15vw;
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+  height: 92vh;
+  position: fixed;
+}
+
+.side-nav-container .side-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 5px;
+  text-transform: capitalize;
+}
+
+.side-nav-container .active-link {
+  background-color: var(--secondary-color);
+}
+
+.side-nav-container .side-link:hover {
+  background-color: rgb(242, 105, 70, 0.3);
+  cursor: pointer;
+}
+
+.side-nav-container .side-link img {
+  width: 20px;
+  height: 20px;
+}
+
+.side-nav-container .side-link span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main {
+  width: 85vw;
+  height: 92vh;
+  margin-left: 15vw;
+}

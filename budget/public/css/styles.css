@@ -1,0 +1,9 @@
+@import url(common/navbar.css);
+@import url(dashboard/styles.css);
+@import url(revenues/styles.css);
+@import url(expenses/styles.css);
+@import url(bills/styles.css);
+@import url(debts/styles.css);
+@import url(investments/styles.css);
+@import url(transactions/styles.css);
+@import url(common/form.css);
